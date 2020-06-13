@@ -6,26 +6,37 @@ import service.DeviceService;
 
 import java.util.List;
 
+/**
+ * @author a1399
+ */
 public class DeviceServiceImpl implements DeviceService {
     @Override
-
-    public Boolean addDevice(int num, Device device) {
-        /**
-         *@Desciprion add devices function
-         *@param num the number of device that you want add
-         *@param device Device what you want to add
-         *@return  true means success,false means unknow error
-         */
+    public Boolean addDevice(Device device) {
         return null;
     }
 
     @Override
-    public Boolean removeDevice(int num, Device device) {
+    public Boolean removeDevice(Device device) {
         return null;
     }
 
     @Override
-    public List<Device> getDeviceList(User user) {
+    public List<Device> getDeviceList() {
+        return null;
+    }
+
+    @Override
+    public List<Device> getBrokenList() {
+        return null;
+    }
+
+    @Override
+    public List<Device> getSelectedDeviceList(String type) {
+        return null;
+    }
+
+    @Override
+    public Boolean updateBreakDevice(Device device) {
         return null;
     }
 }

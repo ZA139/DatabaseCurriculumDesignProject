@@ -8,7 +8,7 @@ import java.util.List;
 
 public class UserServiceImpl implements UserService {
     @Override
-    public User login(String uId, String upassword, String uType) {
+    public User login(String username, String password, Boolean type) {
         return null;
     }
 
@@ -20,7 +20,6 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<User> getUserList() {
         DeviceServiceImpl deviceService = new DeviceServiceImpl();
-        deviceService.addDevice(1,new Device());
         return null;
     }
 }
