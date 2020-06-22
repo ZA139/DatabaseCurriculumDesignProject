@@ -51,4 +51,9 @@ public class DeviceServiceImpl implements DeviceService {
     public Boolean repairDevice(String id) {
         return deviceDAO.repairDevice(id);
     }
+
+    @Override
+    public List<Device> getUserDeviceList(User user) {
+        return deviceDAO.getUserDeviceList(user);
+    }
 }

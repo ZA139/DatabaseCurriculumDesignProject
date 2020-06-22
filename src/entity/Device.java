@@ -4,24 +4,24 @@ public class Device {
     String eqid;
     String type;
     Boolean isBreak;
-    Boolean isAvailiable;
+    Boolean isBorrow;
 
     public Device() {
     }
 
-    public Device(String eqid, String type, Boolean isBreak, Boolean isAvailiable) {
+    public Device(String eqid, String type, Boolean isBreak, Boolean isBorrow) {
         this.eqid = eqid;
         this.type = type;
         this.isBreak = isBreak;
-        this.isAvailiable = isAvailiable;
+        this.isBorrow = isBorrow;
     }
 
     public Boolean getAvailiable() {
-        return isAvailiable;
+        return isBorrow;
     }
 
     public void setAvailiable(Boolean availiable) {
-        isAvailiable = availiable;
+        isBorrow = availiable;
     }
 
     public String getEqid() {

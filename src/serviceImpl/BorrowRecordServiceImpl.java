@@ -5,6 +5,8 @@ import entity.BorrowRecord;
 import entity.User;
 import service.BorrowRecordService;
 
+import java.util.List;
+
 /**
  * @author a1399
  */
@@ -16,7 +18,17 @@ public class BorrowRecordServiceImpl implements BorrowRecordService {
     }
 
     @Override
-    public Boolean backBorrowRecord(BorrowRecord borrowRecord) {
-        return borrowRecordDAO.backBorrowRecord(borrowRecord);
+    public Boolean backBorrowRecord(String eqid) {
+        return borrowRecordDAO.backBorrowRecord(eqid);
+    }
+
+    @Override
+    public int getSelectedDateBorrowRecord(String date) {
+        return borrowRecordDAO.getSelectedDateBorrowRecord(date);
+    }
+
+    @Override
+    public int getSelectedDateReturnRecord(String date) {
+        return borrowRecordDAO.getSelectedDateReturnRecord(date);
     }
 }

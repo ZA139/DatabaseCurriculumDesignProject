@@ -53,4 +53,10 @@ public interface DeviceDAO {
      *@return  true means success,false means unknow error
      */
     public Boolean repairDevice(String id);
+    /**
+     *get device list of one user
+     * @param user The query user
+     *@return  The list device list of one user
+     */
+    public List<Device> getUserDeviceList(User user);
 }

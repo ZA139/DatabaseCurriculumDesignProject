@@ -6,7 +6,7 @@ import java.util.Date;
  * @author a1399
  */
 public class BorrowRecord {
-    String id;
+    int id;
     String username;
     String eqid;
     Date brTime;
@@ -15,7 +15,7 @@ public class BorrowRecord {
     public BorrowRecord() {
     }
 
-    public BorrowRecord(String id, String username, String eqid, Date brTime, Date backTime) {
+    public BorrowRecord(int id, String username, String eqid, Date brTime, Date backTime) {
         this.id = id;
         this.username = username;
         this.eqid = eqid;
@@ -23,11 +23,11 @@ public class BorrowRecord {
         this.backTime = backTime;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

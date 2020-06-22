@@ -16,4 +16,10 @@ public interface MaintenanceRecordDAO {
      *@return  true means success,false means unknow error
      */
     public Boolean backMaintenanceRecord(MaintenanceRecord maintenanceRecord);
+    /**
+     *Coquery Maintenance Record By DeviceId
+     *@param id the device id
+     *@return  Null means 404
+     */
+    public MaintenanceRecord queryMaintenanceRecordByDeviceId(String id);
 }

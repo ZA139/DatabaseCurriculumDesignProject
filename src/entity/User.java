@@ -50,4 +50,16 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    @Override
+    public String toString() {
+        int temp;
+        if(type){
+            temp=1;
+        }
+        else{
+            temp=0;
+        }
+        return username+","+password+","+temp+","+email;
+    }
 }

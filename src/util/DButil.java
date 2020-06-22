@@ -12,8 +12,8 @@ public class DButil {
             Class.forName("com.mysql.jdbc.Driver");
             System.out.println("加载成功！");
             String url = "jdbc:mysql://localhost:3306/databasecurriculumdesignproject?useUnicode=true&characterEncoding=utf-8";
-            String username = "ZA139";
-            String password = "721205.asd";
+            String username = "root";
+            String password = "password";
             connection = DriverManager.getConnection(url, username, password);
         } catch (ClassNotFoundException e) {
             // TODO Auto-generated catch block
