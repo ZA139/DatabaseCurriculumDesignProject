@@ -14,10 +14,10 @@ public interface DeviceService {
     public Boolean addDevice(Device device);
     /**
      * remove devices function
-     *@param device Device what you want to remove
+     *@param id  Device ID what you want to remove
      *@return  true means success,false means unknow error
      */
-    public Boolean removeDevice(Device device);
+    public Boolean removeDevice(String id);
     /**
      *get devices list
      *@return  The list of devices
@@ -41,4 +41,16 @@ public interface DeviceService {
      *@return  true means success,false means unknow error
      */
     public Boolean updateBreakDevice(Device device);
+    /**
+     *update the information of the device
+     * @param  device which device you want to update
+     *@return  true means success,false means unknow error
+     */
+    public Boolean updateDevice(Device device);
+    /**
+     *add maintenance record with device id
+     * @param  id which device's id that you want to repair
+     *@return  true means success,false means unknow error
+     */
+    public Boolean repairDevice(String id);
 }

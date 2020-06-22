@@ -24,4 +24,10 @@ public interface UserDAO {
      *@return  The list of users
      */
     public List<User> getUserList();
+    /**
+     *delete user
+     * @param  username the username of the user what you wanna delete
+     *@return  void
+     */
+    void deleteUser(String username);
 }

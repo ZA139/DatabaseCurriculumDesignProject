@@ -1,5 +1,6 @@
 package serviceImpl;
 
+import daoImpl.DeviceDAOImpl;
 import entity.Device;
 import entity.User;
 import service.DeviceService;
@@ -10,33 +11,44 @@ import java.util.List;
  * @author a1399
  */
 public class DeviceServiceImpl implements DeviceService {
+    DeviceDAOImpl deviceDAO=new DeviceDAOImpl();
     @Override
     public Boolean addDevice(Device device) {
-        return null;
+        return deviceDAO.addDevice(device);
     }
 
     @Override
-    public Boolean removeDevice(Device device) {
-        return null;
+    public Boolean removeDevice(String id) {
+        return deviceDAO.removeDevice(id);
     }
 
     @Override
     public List<Device> getDeviceList() {
-        return null;
+        return deviceDAO.getDeviceList();
     }
 
     @Override
     public List<Device> getBrokenList() {
-        return null;
+        return deviceDAO.getBrokenList();
     }
 
     @Override
     public List<Device> getSelectedDeviceList(String type) {
-        return null;
+        return deviceDAO.getSelectedDeviceList(type);
     }
 
     @Override
     public Boolean updateBreakDevice(Device device) {
-        return null;
+        return deviceDAO.updateBreakDevice(device);
+    }
+
+    @Override
+    public Boolean updateDevice(Device device) {
+        return deviceDAO.updateDevice(device);
+    }
+
+    @Override
+    public Boolean repairDevice(String id) {
+        return deviceDAO.repairDevice(id);
     }
 }

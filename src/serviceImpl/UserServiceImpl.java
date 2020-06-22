@@ -1,5 +1,6 @@
 package serviceImpl;
 
+import daoImpl.UserDAOImpl;
 import entity.Device;
 import entity.User;
 import service.UserService;
@@ -7,19 +8,25 @@ import service.UserService;
 import java.util.List;
 
 public class UserServiceImpl implements UserService {
+
+    UserDAOImpl userDAO = new UserDAOImpl();
     @Override
     public User login(String username, String password, Boolean type) {
-        return null;
+        return userDAO.login(username,password,type);
     }
 
     @Override
     public Boolean register(User user) {
-        return null;
+        return userDAO.register(user);
     }
 
     @Override
     public List<User> getUserList() {
-        DeviceServiceImpl deviceService = new DeviceServiceImpl();
-        return null;
+        return userDAO.getUserList();
+    }
+
+    @Override
+    public void deleteUser(String username) {
+        userDAO.deleteUser(username);
     }
 }
